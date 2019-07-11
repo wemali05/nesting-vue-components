@@ -1,6 +1,7 @@
 <template>
  <header>
   <h1>{{title}}</h1>
+  <button v-on:click="changeTitle">change title</button>
  </header>
 </template>
 
@@ -8,9 +9,19 @@
 
 
 export default {
+  props:{
+    title:{
+      type: String
+    }
+  },
   data () {
     return {
-      title:'My first Vue App:)'
+      title:'Alfred wemali Vue App:)'
+    }
+  },
+  methods:{
+    changeTitle(){
+      this.title = "Wizards App"
     }
   }
 }
