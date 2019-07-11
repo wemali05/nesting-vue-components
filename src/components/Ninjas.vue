@@ -15,7 +15,8 @@
 export default {
   props:{
     ninjas:{
-      type: Array
+      type: Array,
+      required: true
     }
   },
   data () {
