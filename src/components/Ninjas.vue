@@ -29,7 +29,29 @@ export default {
     deleteNinja(){
       this.ninjas.pop();
     }
-  }
+  },
+//lifecycle hooks
+beforeCreated(){
+  alert('beforeCreated');
+},
+created(){
+  alert('created');
+},
+beforeMounted(){
+  alert('beforeMounted');
+},
+mounted(){
+  alert('mounted');
+},
+beforeUpdated(){
+  alert('beforeUpdated')
+},          
+updated(){
+  alert('updated');
+}
+
+
+
 }
 </script>
 
