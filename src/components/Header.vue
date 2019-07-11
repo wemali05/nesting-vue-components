@@ -1,7 +1,6 @@
 <template>
  <header>
-  <h1>{{title}}</h1>
-  <button v-on:click="changeTitle">change title</button>
+  <h1 v-on:click="changeTitle">{{title}}</h1>
  </header>
 </template>
 
@@ -21,7 +20,7 @@ export default {
   },
   methods:{
     changeTitle(){
-      this.title = "Wizards App"
+      this.$emit('changeTitle', 'Wizard Vue')
     }
   }
 }
